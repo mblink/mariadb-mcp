@@ -59,6 +59,7 @@ unrelated pull request.
 | --- | --- | --- |
 | `test_table_schema_comments.py` | No (mocked) | Schema-tool logic in isolation: comment handling, validation, error paths, field mapping |
 | `test_list_databases_unittest.py` | No (mocked) | `list_databases` |
+| `test_fastmcp_contract.py` | No (mocked) | The fastmcp/mcp contract: tool registration and input schemas, result serialization, error mapping to `ToolError`, the read-only prefix gate, and the stateless streamable-HTTP transport production runs |
 | `test_integration_schema_comments.py` | Yes | Table/column comments against a real schema (DL-5840) |
 | `test_mcp_server.py` | Yes | All six tools through a fastmcp client, plus read-only enforcement |
 | `test_mariadb_mcp_tools.py` | Yes | Tool behaviour called directly: SQL execution, joins, aggregation, parameter edge cases |
